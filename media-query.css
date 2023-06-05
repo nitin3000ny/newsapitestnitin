@@ -1,0 +1,35 @@
+@media screen and (max-width:883px) {
+    .nav-bar {
+        position: relative;
+        overflow: initial;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 70px;
+        transition: 0.25s ease-in-out;
+        color: black;
+    }
+
+    .nav-links.active2 {
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+    .right-search{
+        margin-left: 1rem;
+    }
+    
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin News</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container flex navigation nav-bar ">
+            <div class="left-nav flex"><img src="Destination-bro.png" alt="" style="width: 100px;" id="logo"
+                    onclick="reload()">News</div>
+            <div class="right-nav nav-links " id="nav-links">
+                <ul class="flex nav-links2 nav-bar">
+                    <li class="hover-links nav-item" id="development" onclick="onNavItemClick('development')">
+                        Development</li>
+                    <li class="hover-links nav-item" id="world" onclick="onNavItemClick('world')">World</li>
+                    <li class="hover-links nav-item" id="ai" onclick="onNavItemClick('ai')">AI</li>
+                    <li class="hover-links nav-item" id="technology" onclick="onNavItemClick('technology')">Technology
+                    </li>
+                    <div class="right-search">
+                        <input type="text" placeholder="e.g. Web Dev" id="search-text"> <button
+                            id="search-button">Search</button>
+                    </div>
+                </ul>
+
+            </div>
+            <a href=" #" class="hover-links nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </nav>
+    <main>
+        <div class="container card-container flex" id="news-card-container">
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <template id="news-card">
+        <div class="news-card flex" id="card">
+            <img src="https://dummyimage.com/240x120/fff/aaa
+    " alt="news-img" id="news-img">
+            <h3 id="news-source">Publisher with dates</h3>
+            <h1 id="news-title">News Title</h1>
+            <p id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia enim facere
+                voluptatem vero
+                expedita voluptatibus officiis illo, quae culpa vel, placeat ea delectus sint assumenda, rerum
+                distinctio exercitationem amet tenetur.</p>
+        </div>
+    </template>
+    <footer>
+        <a href="https://newsapi.org/">API</a>
+        <a href="https://www.youtube.com/watch?v=-FldHnejaA4"> Idea</a>
+        <a href="https://nitin-s-resume.vercel.app/"> Resume Website</a>
+    </footer>
+    <script src="https://kit.fontawesome.com/b44be53acd.js" crossorigin="anonymous"></script>
+
+    <script src="news.js"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        toggleButton.addEventListener('click', () => { navLinks.classList.toggle('active2'); })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,300;0,500;1,100&family=Source+Code+Pro:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    /* font-family: 'Roboto',sans-serif; */
+    line-height: 1.25rem;
+}
+
+:root {
+    --inline-padding: 24px;
+    --news-color: rgb(35, 137, 205);
+    --accent-color: rgb(4, 168, 124);
+    --nav-bg: rgba(126, 128, 127, 0.358);
+
+}
+
+nav {
+
+    background-color: var(--nav-bg);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-inline: var(--inline-padding);
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    color: var(--news-color);
+    font-weight: 600;
+}
+
+.left-nav {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navigation {
+    justify-content: space-between;
+}
+
+.nav-links2 {
+    gap: 24px;
+}
+
+.hover-links:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+
+}
+
+.hover-links:active {
+    color: rgb(5, 126, 21)
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding-inline: 12px;
+    padding-block: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+}
+
+button {
+    background-color: var(--accent-color);
+    padding-inline: 12px;
+    padding-block: 8px;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.news-card {
+    flex-direction: column;
+    width: 320px;
+    height: 450px;
+    background-color: var(--nav-bg);
+    border: 1px solid rgb(136, 145, 115);
+    border-radius: 8px;
+    justify-content: center;
+    gap: 10px;
+    /* padding-inline: var(--inline-padding); */
+    overflow: hidden;
+    align-items: flex-start;
+    color: #282828;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 3px black;
+    cursor: pointer;
+}
+
+#news-img {
+    width: 100%;
+}
+
+main {
+    padding-block: 50px;
+}
+
+.nav-item.active {
+    color: red;
+}
+
+.nav-toggle {
+    display: none;
+}
+.right-search{
+    margin-left: 3rem;
+}
+a{
+    display: inline-block;
+    border-radius: 8px;
+    background: var(--news-color);
+    color: #fff;
+    padding-inline: 4px;
+    padding-block: 4px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+a:hover{
+    transform: translateX(3px);
+    background-color: var(--accent-color);
+}
+footer{
+    padding-block: 10px;
+    background-color: rgba(0, 128, 0, 0.269);
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
